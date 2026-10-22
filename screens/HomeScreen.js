@@ -27,6 +27,34 @@ export default function HomeScreen({ navigation }) {
     toggleFavorite,
     bookFood,
   } = useApp();
+    if (loading) {
+    return (
+      <View style={styles.screen}>
+        <Text style={{ textAlign: 'center', marginTop: 40 }}>
+          กำลังโหลดข้อมูลอาหาร...
+        </Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View style={styles.screen}>
+        <Text style={{ textAlign: 'center', marginTop: 40 }}>
+          โหลดข้อมูลไม่สำเร็จ
+        </Text>
+
+        <Pressable
+          onPress={reloadFoods}
+          style={{ alignSelf: 'center', marginTop: 15 }}
+        >
+          <Text style={{ color: '#24583B', fontWeight: 'bold' }}>
+            ลองอีกครั้ง
+          </Text>
+        </Pressable>
+      </View>
+    );
+  }
 
   return (
     <ScrollView
