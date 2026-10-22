@@ -15,6 +15,13 @@ import { useApp } from '../context/AppContext';
 
 export default function HomeScreen({ navigation }) {
   const {
+    foods,
+    loading,
+    error,
+    reloadFoods,
+  } = useFoods();
+
+  const {
     favorites,
     bookings,
     toggleFavorite,
