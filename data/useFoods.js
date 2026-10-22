@@ -23,7 +23,7 @@ export function useFoods() {
       const data = await response.json();
 
       if (!Array.isArray(data)) {
-        throw new Error('รูปแบบ foods.json ต้องเป็นรายการอาหารแบบ Array');
+        throw new Error('รูปแบบข้อมูลอาหารไม่ถูกต้อง');
       }
 
       setFoods(data);
