@@ -9,7 +9,7 @@ import {
   Pressable,
 } from 'react-native';
 
-import foods from '../data/foods';
+import { useFoods } from '../data/useFoods';
 import FoodCard from '../components/FoodCard';
 import { useApp } from '../context/AppContext';
 
