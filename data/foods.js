@@ -40,6 +40,16 @@ const foods = [
     emoji: '🥪',
     image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&auto=format&fit=crop&q=80',
   },
+   {
+    id: '5',
+    name: 'ข้าวกล่องผัด',
+    description: 'อาหารปรุงสุก พร้อมรับประทาน',
+    price: 25,
+    quantity: 5,
+    location: 'โรงอาหาร',
+    emoji: '🍱',
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=80',
+  },
 ];
 
 export default foods;
